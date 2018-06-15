@@ -1,38 +1,23 @@
-#### 项目介绍
-{**以下是码云平台说明，您可以替换为您的项目简介**
-码云是开源中国推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用码云实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+#### 项目简介
+* 此项目仅用学习交流技术使用 不做商业用途。
+* 项目效果预览 [http://findcl.com](http://findcl.com)
+* 源码地址  https://github.com/ssstk/findcl 
+*  无意读到@keenwon的node磁力搜索引擎的文章，感觉非常有意思，同时也谢谢能把项目分享出来 @keenwon的项目地址[antcolony](https://github.com/keenwon/antcolony) 实现方式 还是有很大的不同 从获取磁力 到解析磁力 
 
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本项目
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
-
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [http://git.mydoc.io/](http://git.mydoc.io/)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
->>>>>>> 8ebf1a980cb315498812b654463e1d6d46c98228
+#### 上线
+* 2018-06-01 网站正式上线。域名是 [http://findcl.com](http://findcl.com)，
+* 两台VPS （都是某些云做活动买的 配置低）
+* 第一台部署了FindCl站点本身（koa2、nginx）和单个节点的 Elasticsearch
+* 第二台部署了磁力链接爬虫（后面细说）
+* Mongodb数据库在阿里云（目前有300W数据库，每日新收录3W+的数据）
+#### 项目依赖 
+* DHT BT资源爬虫  [dhtspider](https://github.com/alanyang/dhtspider)
+* 磁力链接解析 [ torrent-stream ]( https://github.com/mafintosh/torrent-stream)
+* Mongodb数据库
+* 中文搜索 Elasticsearch.js  
+* 定时执行Mongodb 与Elasticsearch 的数据同步
+* koa2 
+* ...
+#### 存在的问题
+*  torrent-stream 解析磁力链接缓慢 需要好几秒  P2P网络没有资源时还有可能解析不到
+*  dhtspider 爬虫 由于服务器带宽是1m 所以跑到时间长就把带宽跑慢了 现在的做法就是搜集一些磁力链接暂停爬虫 解析完毕之后再启动爬虫
