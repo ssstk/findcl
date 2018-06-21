@@ -31,4 +31,4 @@
 * 解析磁力链接缓慢且成功率很低， 失败的大概在 3 成左右且需要好几秒
 
 ### 其他
-* 有其他问题请新建issue交流。
+* 有其他问题请新建[issue](https://github.com/ssstk/findcl/issues)交流。
