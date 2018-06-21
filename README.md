@@ -32,3 +32,6 @@
 
 ### 其他
 * 有其他问题请新建[issue](https://github.com/ssstk/findcl/issues)交流。
+
+### 更新日志
+* 2018-06-21 搜索列表增加 按照资源收录时间排序
