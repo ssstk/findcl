@@ -1,13 +1,13 @@
 ### 项目简介
 * 使用 nodejs 实现磁力链接爬虫 磁力链接解析成 torrent种子信息，保存到数据库，利用 Elasticsearch 实现中文检索。koa2 搭建磁力链接搜索引擎
-* 前端站点 项目效果预览 http://findcl.com
+* 前端站点 项目效果预览 http://findcl.com 命名 **傻逼巴巴**
 * 源码地址 https://github.com/ssstk/findcl
 * 后端脚本 磁力链接获取 磁力链接解析 入库 Mongodb 定时同步 Elasticsearch
 * 源码地址 https://github.com/ssstk/manget2torrent
 * 此项目仅用学习交流技术使用 不做商业用途。
 
 ### 上线
-* 2018-06-01 网站正式上线。暂时想不到什么名字 各位大大可以推荐下哦。域名是 http://findcl.com ，
+* 2018-06-01 网站正式上线。命名 **傻逼巴巴**。域名是 http://findcl.com ，
 * 两台 VPS （都是某些云做活动买的 配置低）
 * 第一台部署了 FindCl 站点本身（ koa2、nginx ）和单个节点的 Elasticsearch
 * 第二台部署了磁力链接爬虫 hashinfo 解析 入库 Mongodb
