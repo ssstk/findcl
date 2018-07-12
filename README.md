@@ -1,3 +1,12 @@
+[![GitHub issues](https://img.shields.io/github/issues/ssstk/findcl.svg)](https://github.com/ssstk/findcl/issues)
+[![GitHub forks](https://img.shields.io/github/forks/ssstk/findcl.svg?style=social&label=Fork)](https://github.com/ssstk/findcl/network)
+[![GitHub stars](https://img.shields.io/github/stars/ssstk/findcl.svg?style=social&label=Stars)](https://github.com/ssstk/findcl/stargazers)
+[![dependency status](https://img.shields.io/david/ssstk/findcl.svg?maxAge=3600&style=flat)](https://david-dm.org/ssstk/findcl/)
+
+
+
+
+
 ### 项目简介
 * 使用 nodejs 实现磁力链接爬虫 磁力链接解析成 torrent种子信息，保存到数据库，利用 Elasticsearch 实现中文检索。koa2 搭建磁力链接搜索引擎
 * 前端站点 项目效果预览 http://findcl.com 命名 **傻逼吧**
