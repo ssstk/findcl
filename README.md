@@ -8,9 +8,14 @@
 
 
 ### 项目简介
+* 此项目仅用学习交流技术使用 不做商业用途。
 * 使用 nodejs 实现磁力链接爬虫 磁力链接解析成 torrent种子信息，保存到数据库，利用 Elasticsearch 实现中文检索。koa2 搭建磁力链接搜索引擎
 * 后端脚本 磁力链接获取 磁力链接解析 入库 Mongodb 定时同步 Elasticsearch
-* 此项目仅用学习交流技术使用 不做商业用途。
+* 前端站点 项目效果预览 http://findcl.co
+* 源码地址 https://github.com/ssstk/findcl
+* 后端脚本 磁力链接获取 磁力链接解析 入库Mongodb 定时同步 Elasticsearch
+* 源码地址 https://github.com/ssstk/manget2torrent
+* @keenwon的node磁力搜索引擎的文章，感觉非常有意思，同时也谢谢能把项目分享出来 @keenwon的项目地址antcolony 实现方式 还是有很大的不同 从获取磁力 到解析磁力
 
 
 ### 项目依赖
